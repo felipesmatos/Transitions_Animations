@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+        }
+
+        @keyframes anuncio-perc {
+            0%{
+                transform: translate(630px, -55px);
+            }
+            100%{
+                transform: translate(-250px,-55px);
+            }
+        }
+
+        @keyframes anuncio {
+            from{
+                transform: translate(630px, -55px);
+            }
+            to{
+                transform: translate(-250px,-55px);
+            }
+        }
+
+        main{
+            min-height: 100vh;
+            max-width: 100%;
+            position: relative;
+            margin: 0px 0px 0px 0px;
+            background-color: rgba(0, 94, 5, 0.815);
+            color: white;
+        }
+        section{
+            padding-bottom: 50px;
+        }
+        img{
+            margin-left: 15%;
+            width: 70%;
+            height: 200px;
+            /* background-color: rgb(0, 255, 42); */
+            transition: box-shadow 1s;
+        }
+        img:hover{
+            box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.342);
+        }
+
+        h1, h2{
+            text-align: center;
+        }
+        h1{
+            margin-top: 0px;
+        }
+        div{
+            height: 50px;
+            width: 35%;
+            border-radius: 5px;
+            box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.199);
+            background-color: rgba(0, 201, 84, 0.945);
+            position: absolute;
+            transform: translate(630px, -55px);
+            color: rgb(0, 0, 0);
+            animation: anuncio 15s linear infinite;
+        }
+        p{
+            padding: 0px 20px 10px 20px;
+        }
+        p.doacao{
+            padding:0px 0px 0px 10px;
+
+            /* duration | easing-function | delay | iteration-count | direction |   fill-mode | play-state | nome */
+            animation: 3s ease-in 1s 2 reverse both paused anuncio;
+
+            /* duration | easing-function | delay | nome */
+            animation: 3s ease-in 1s anuncio;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <main>
+        <h1>Ajude nosso planeta</h1>
+        <section>
+            <h2>Salve nossas florestas</h1>
+            <img src="download.jpeg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet error atque et eum quos ut laudantium quas suscipit, velit est similique, ratione qui unde quibusdam praesentium sequi accusantium facere laboriosam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque hic iusto debitis quisquam omnis tempora ullam voluptate animi, corrupti consequuntur unde veritatis id quidem amet officia odit est numquam facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus enim, quas repudiandae est pariatur, at ratione perferendis laudantium quam officia dignissimos modi atque tenetur! Quasi repellat repellendus sint reprehenderit maxime?</p>
+        </section>
+        <a href="#">
+            <div id="anuncio">
+                <p class="doacao">acesse nosso canal de doações
+            </div>
+        </a>
+        <section>
+            <h2>Salve nossos mares</h2>
+            <img src="pexels-kellie-churchman-371878-1001682.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus numquam dolorum maiores aliquid sed corrupti saepe, inventore qui odit officia eveniet accusantium in facere. Nobis mollitia ab ipsam ipsum assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, recusandae quis! Iure quos amet laboriosam non vel. Maxime, praesentium perferendis. Iure facere natus laudantium cum ipsum itaque aspernatur earum ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro amet, adipisci impedit illo tenetur ad iste et cupiditate dicta quod nihil nostrum nulla voluptatum nesciunt dignissimos sequi hic? Ex, laboriosam!</p>
+        </section>
+        <a href="#">
+            <div id="anuncio">
+                <p class="doacao">acesse nosso canal de doações
+            </div>
+        </a>
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        div{
+            background-color: yellow;
+            width: 150px;
+            height: 150px;
+
+            /* transição por extenso */
+            
+            transition-property: border-radius;
+
+            transition-duration: 2s;
+
+            transition-timing-function: ease;
+
+            transition-delay: 2s;
+
+            /* shorthand */
+            
+            transition: border-radius 5s ease 2s;
+
+            transition: 
+            border-radius
+            5s 
+            ease 
+            2s;
+
+        }
+        div:hover{
+            border-radius: 120px;
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shorthand</h1>
+    <div>
+
+    </div>
+</body>
+</html>

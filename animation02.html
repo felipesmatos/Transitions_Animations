@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Animação de Fundo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .background {
+            width: 100vw;
+            height: 100vh;
+            background-color: #3498db;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            animation: rotateBackground 4s ease ;
+            transform-origin: center;
+        }
+
+        @keyframes rotateBackground {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(180deg);
+            }
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Exemplo de Animação de Fundo</h1>
+        <p>Esta div está fazendo uma rotação para se tornar o fundo do site.</p>
+    </div>
+</body>
+
+</html>
+

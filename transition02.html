@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transições de Slide In e Fade In Interativas</title>
+<style>
+    /* Estilos básicos para o conteúdo */
+    .container {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+    }
+
+    h1,h2{
+        text-align: center;
+        transition: font-size 2s;
+    }
+    p{
+        text-align: justify;
+    }
+    h1:hover{
+        font-size: 2.4em;
+        text-shadow: 2px 2px 10px rgb(153, 0, 255);
+        color: white;
+    }
+    .container {
+        max-width: 600px;
+        background-color: #e9e9e99c;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0; /* Invisível por padrão */
+        transition: opacity 0.5s ease-in-out; /* Transição suave de opacidade */
+    }
+    .container:hover {
+        opacity: 1; /* Torna o contêiner visível ao passar o mouse */
+    }
+    .slideIn {
+        transform: translateY(-50px); /* Começa fora da tela */
+        transition: transform 0.5s ease-in-out; /* Transição suave de transformação */
+    }
+    .container:hover .slideIn {
+        transform: translateY(0); /* Desliza para cima ao passar o mouse */
+    }
+</style>
+</head>
+<body>
+    <h1>Exemplos de Transição</h1>
+    <hr>
+    <h2>Capitulo I</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minima corrupti aliquid corporis nihil. Consequatur, id? Ipsa ut, explicabo consequatur ea doloremque repudiandae. Perspiciatis architecto consequatur, libero dolor odio distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam autem consequatur, eos nulla possimus voluptatum laborum nesciunt a esse natus amet iusto assumenda? Tempora natus facere itaque inventore iure!</p>
+    
+    <h2>Capitulo II</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minima corrupti aliquid corporis nihil. Consequatur, id? Ipsa ut, explicabo consequatur ea doloremque repudiandae. Perspiciatis architecto consequatur, libero dolor odio distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam autem consequatur, eos nulla possimus voluptatum laborum nesciunt a esse natus amet iusto assumenda? Tempora natus facere itaque inventore iure!</p>
+
+    <h2>Capitulo III</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus minima corrupti aliquid corporis nihil. Consequatur, id? Ipsa ut, explicabo consequatur ea doloremque repudiandae. Perspiciatis architecto consequatur, libero dolor odio distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ullam autem consequatur, eos nulla possimus voluptatum laborum nesciunt a esse natus amet iusto assumenda? Tempora natus facere itaque inventore iure!</p>
+    <hr>
+    <h1>Comentários</h1>
+
+    <div class="container">
+        <div class="slideIn">
+            <h2>Deixe seu comentário aqui:</h2>
+            <p>Nos diga oque achou sobre os cápitulos acima, gostariamos muito de saber sua opnião :)</p>
+            <textarea rows="6" style="width: 100%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam eget odio nec finibus.</textarea>
+        </div>
+    </div>
+
+</body>
+</html>
