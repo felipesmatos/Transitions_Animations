@@ -13,19 +13,19 @@
 
         @keyframes anuncio-perc {
             0%{
-                transform: translate(630px, -55px);
+                transform: translate(100vw,-55px);
             }
             100%{
-                transform: translate(-250px,-55px);
+                transform: translate(-100vw,-55px);
             }
         }
 
         @keyframes anuncio {
             from{
-                transform: translate(630px, -55px);
+                transform: translate(100vw,-55px);
             }
             to{
-                transform: translate(-250px,-55px);
+                transform: translate(-100vw,-55px);
             }
         }
 
@@ -41,9 +41,12 @@
             padding-bottom: 50px;
         }
         img{
-            margin-left: 15%;
+            display: block;
             width: 70%;
-            height: 200px;
+            margin: auto;
+            height: 70%;
+            max-width: 500px;
+            height: auto;
             /* background-color: rgb(0, 255, 42); */
             transition: box-shadow 1s;
         }
@@ -53,18 +56,19 @@
 
         h1, h2{
             text-align: center;
-        }
-        h1{
             margin-top: 0px;
         }
+        
         div{
             height: 50px;
-            width: 35%;
+            width: 34%;
+            max-width: 300px;
+            min-width: 200px;
             border-radius: 5px;
             box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.199);
             background-color: rgba(0, 201, 84, 0.945);
             position: absolute;
-            transform: translate(630px, -55px);
+            transform: translate(690px, -55px);
             color: rgb(0, 0, 0);
             animation: anuncio 15s linear infinite;
         }
@@ -72,13 +76,14 @@
             padding: 0px 20px 10px 20px;
         }
         p.doacao{
+           text-align: center;
             padding:0px 0px 0px 10px;
 
             /* duration | easing-function | delay | iteration-count | direction |   fill-mode | play-state | nome */
-            animation: 3s ease-in 1s 2 reverse both paused anuncio;
+            /* animation: 3s ease-in 1s 2 reverse both paused anuncio;
 
             /* duration | easing-function | delay | nome */
-            animation: 3s ease-in 1s anuncio;
+            /* animation: 3s ease-in 1s anuncio; */ 
 
         }
     </style>
